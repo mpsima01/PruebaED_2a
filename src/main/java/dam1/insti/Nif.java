@@ -27,7 +27,7 @@ public class Nif {
      * @param numero
      * @return 
      */
-    private static char calcularLetra(int numero) {
+    public static char calcularLetra(int numero) {
         return LETRAS[numero % 23];
     }
 
