@@ -14,11 +14,19 @@ public class Nif {
     private char letra;
 
     //CONSTANTE: no accesible - compartido por todo - no modificable
+    /**
+     * lista con las letras del nif en orden
+     */
     private static final char[] LETRAS
             = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D',
                 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L',
                 'C', 'K', 'E'};
-
+    /**
+     * Dependiendo del numero del nif, se calcula la letra
+     * que corresponde
+     * @param numero
+     * @return 
+     */
     private static char calcularLetra(int numero) {
         return LETRAS[numero % 23];
     }

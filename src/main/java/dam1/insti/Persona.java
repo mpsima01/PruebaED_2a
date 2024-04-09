@@ -82,7 +82,12 @@ public class Persona implements Comparable<Persona> {
             return nif + "\t" + nombre + "\t\t\t" + getEdad();
         }
     }
-
+    /**Metodo para comprobar si las personas son las mismas
+     * igualando el nif
+     * 
+     * @param a
+     * @return 
+     */
     public boolean equals(Persona a) {
         if (a == null) {
             return false;
